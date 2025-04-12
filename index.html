@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wyatt's Portfolio</title>
+    <meta name="description" content="Welcome to Wyatt's portfolio. Explore my projects and get in touch!">
+    <meta name="keywords" content="Wyatt, Portfolio, Web Development, Projects, Contact">
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Poppins");
+    </style>
+</head>
+<body>
+    <div id="background-animation-container"></div> 
+
+    <header>
+        <img src="Images/MiniWCLogo.webp" alt="WebCrafted Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h1 class="welcome">Welcome I'm</h1>
+            <h2 class="name">Wyatt Davies</h2>
+            <p class="main-skill">Full-Stack Developer</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="three-grid">
+                <div class="project-card" data-repo="TheunrealninjA/Aimmy2-Boob-Edition">
+                    <h3>AimmyV2 Boob Edition</h3>
+                    <p>This is an AI aim assist that help people with movement disabilities play FPS games. 
+                        This AI aim assist uses ONNX and processes the AI with Tensor and CUDA cores.</p>
+                    <p><span class="github-stars">Stars: Loading...</span></p> <!-- Added for stars -->
+                    <a href="https://github.com/TheunrealninjA/Aimmy2-Boob-Edition" target="_blank">View Project</a>
+                </div>
+                <div class="project-card" data-repo="TheunrealninjA/Webcrafted">
+                    <h3>Webcrafted</h3>
+                    <p>Description of project 2.</p>
+                    <p><span class="github-stars">Stars: Loading...</span></p> <!-- Added for stars -->
+                    <a href="https://github.com/TheunrealninjA/Webcrafted">View Project</a>
+                </div>
+                <div class="project-card" data-repo="TheunrealninjA/Covert.it">
+                    <h3>Covert.it</h3>
+                    <p>Description of project 3.</p>
+                    <p><span class="github-stars">Stars: Loading...</span></p> <!-- Added for stars -->
+                    <a href="https://github.com/TheunrealninjA/Covert.it">View Project</a>
+                </div>
+                <div class="project-card" data-repo="TheunrealninjA/OnnxAI">
+                    <h3>OnnxAI Models</h3>
+                    <p>All My Trained AI Onnx Files</p>
+                    <p><span class="github-stars">Stars: Loading...</span></p> <!-- Added for stars -->
+                    <a href="https://github.com/TheunrealninjA/OnnxAI"></a>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: wyattd@webcrafted.pro</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 WebCrafted.Pro. All rights reserved.</p>
+    </footer>
+
+    <script src="JS/background-animation.js"></script>
+    <script src="JS/github-projects.js"></script> <!-- Added script -->
+</body>
+</html>

@@ -1,0 +1,120 @@
+body{
+    background-color: #0b001b;
+    font-family: Poppins, sans-serif;
+    margin: 0;
+    color: rgb(180, 180, 180);
+}
+
+/* nav */
+
+.logo{ 
+    margin-left: 60px; 
+}
+
+nav{
+    background-color: #0b001b;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    
+}
+
+nav li{
+    position: relative;
+    padding: 5px 0;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(180, 180, 180);
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover{ color: #fff; }
+
+nav li::after {
+    background-color: rgb(180, 180, 180);
+    bottom: 0;
+    content: '';
+    height: 4px;
+    left: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .3s ease, background-color .3s ease;
+    width: 100%
+}
+
+nav li:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+    background-color: #fff;
+}
+
+/* about */
+
+.welcome{
+    display: flex;
+    margin-left: 4%;
+    margin-top: 5%;
+    font-size: 20px;
+}
+
+.name{
+    font-size: 50px;
+    margin-left: 4%;
+    margin-top: -1%;
+}
+
+.main-skill{
+    display: flex;
+    margin-left: 4%;
+    margin-top: -3%;
+    font-size: 20px;
+}
+
+body {
+    height: 100vh; /* Ensure the body takes full height */
+}
+
+/* Styles for the background animation container */
+#background-animation-container {
+    position: fixed; /* Or absolute, depending on desired scroll behavior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Place behind content */
+    pointer-events: none; /* Allow clicks to pass through */
+}
+
+/* Base styles for generated elements */
+.particle {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1); /* Initial faint white */
+    border-radius: 50%;
+    transition: background-color 0.3s ease, opacity 0.3s ease; /* Smooth flash transition */
+    opacity: 0; /* Start invisible, fade in */
+}
+
+/* Ensure main sections are above pseudo-elements if needed */
+#projects, #contact {
+    position: relative; /* May still be needed depending on layout */
+    z-index: 1; /* May still be needed depending on layout */
+}
+
+footer {
+    position: relative; /* May still be needed depending on layout */
+    z-index: 1; /* May still be needed depending on layout */
+}
